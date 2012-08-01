@@ -29,8 +29,15 @@ public partial class week3 : System.Web.UI.Page
             sql = "insert into huber_tracker (ip, useragent, referrer, destination, datetimewhen)" +
                 " values (@ip, @useragent, @referrer, @destination, @datetimewhen)";
 
+            System.Text.StringBuilder mysb = new System.Text.StringBuilder();
+
+            mysb.Append("insert into huber_tracker (ip, useragent, referrer, destination,");
+            mysb.Append("datetimewhen) values (@ip, @useragent, @referrer, @destination,");
+            mysb.Append("@datetimewhen)");
             
-            comm.CommandText = sql;
+
+            //comm.CommandText = sql;
+            comm.CommandText = mysb.ToString();
 
             comm.Parameters.AddWithValue("@ip", Request.ServerVariables["REMOTE_ADDR"]);
             comm.Parameters.AddWithValue("@useragent", Request.ServerVariables["HTTP_USER_AGENT"]);
@@ -81,9 +88,7 @@ public partial class week3 : System.Web.UI.Page
             sql += " and useragent like @useragent";
             comm.Parameters.AddWithValue("@useragent", "%" + txtUserAgent.Text + "%");
         }
-
-
-        
+                
         comm.CommandText = sql;
         System.Data.DataSet ds = new System.Data.DataSet();
 
