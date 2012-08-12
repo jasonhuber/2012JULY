@@ -5,5 +5,7 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" Runat="Server">
     <asp:Label runat="server" ID="lblDisplay"></asp:Label>
     <br /><a href="week4.aspx">Return to shopping</a>
+    <br /><a href="week5_checkout.aspx">Check out!</a>
+
 </asp:Content>
 
