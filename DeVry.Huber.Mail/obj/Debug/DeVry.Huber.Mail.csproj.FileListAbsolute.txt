@@ -1,0 +1,5 @@
+C:\Users\Jason\Dropbox\Devry\CIS407\2012JULY\DeVry.Huber.Mail\bin\Debug\DeVry.Huber.Mail.dll
+C:\Users\Jason\Dropbox\Devry\CIS407\2012JULY\DeVry.Huber.Mail\bin\Debug\DeVry.Huber.Mail.pdb
+C:\Users\Jason\Dropbox\Devry\CIS407\2012JULY\DeVry.Huber.Mail\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Jason\Dropbox\Devry\CIS407\2012JULY\DeVry.Huber.Mail\obj\Debug\DeVry.Huber.Mail.dll
+C:\Users\Jason\Dropbox\Devry\CIS407\2012JULY\DeVry.Huber.Mail\obj\Debug\DeVry.Huber.Mail.pdb

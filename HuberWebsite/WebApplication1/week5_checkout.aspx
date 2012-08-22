@@ -6,6 +6,14 @@
 
 <!--should have a repeater here showing me what I am going to order....
 -->
+<asp:repeater runat="server" ID="rptLineItems">
+    <ItemTemplate>
+            <%# DataBinder.Eval(Container.DataItem, "Price", "{0:C}")%>
+            <%# DataBinder.Eval(Container.DataItem, "Description")%>
+            <%# DataBinder.Eval(Container.DataItem, "quantity")%>
+            <img src=".<%# DataBinder.Eval(Container.DataItem, "IMAGE")%>" width="100" alt="Shawn copies my code" /><br />
+    </ItemTemplate>
+</asp:repeater>
 
 Credit Card Number: <asp:TextBox ID="cc" runat="server"></asp:TextBox>
     <br />
